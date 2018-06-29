@@ -1,0 +1,262 @@
+@tailwind preflight;
+
+@tailwind components;
+
+.btn-footer {
+  @apply .no-underline .bg-grey-darker .text-black .font-bold .py-2 .px-4 .border .border-black .inline-flex .items-center;
+}
+
+.btn-mobile {
+  @apply .inline-block .text-sm .px-4 .py-2 .leading-none .border .rounded .text-white .border-white;
+}
+
+.btn-link {
+  @apply .inline-block .text-sm .px-4 .py-2 .leading-none .border .rounded .text-white .border-white .no-underline .mr-2 .mt-4;
+}
+
+.card-comments {
+  @apply .text-sm .text-grey-dark .flex .items-center;
+}
+
+.card-title {
+  @apply .text-black .font-bold .text-xl .mb-2 .max-w-lg;
+}
+
+.container-white {
+  @apply .rounded .overflow-hidden .mb-8 .bg-white;
+}
+
+.nav-flex {
+  @apply .flex .items-center .justify-between .flex-wrap .bg-teal-dark;
+}
+
+.no-match {
+  @apply .m-8 .font-cali .text-xl .text-grey-darker;
+}
+
+.card {
+  @apply .bg-white .rounded-b .p-4 .flex .flex-col .justify-between .leading-normal .border-b .border-grey-light;
+}
+
+.image {
+  @apply .flex-none .bg-cover .rounded-t .text-center .overflow-hidden .float-right;
+}
+
+@tailwind utilities;
+
+.fill-teal {
+  fill:#4dc0b5;
+}
+
+.fill-blue {
+  fill:#003d77;
+}
+
+.fill-green {
+  fill:#00aa4e;
+}
+
+.fill-orange {
+  fill:#f6993f;
+}
+
+.transform-scale-scheduler {
+  transform: scale(1.5);
+}
+
+.transform-svg {
+  transform: scale(0.6);
+  position: relative;
+  top: -2rem;
+}
+
+.position-scheduler {
+  position: relative;
+  top: 4rem;  
+}
+
+.rotate270 {
+  transform: rotate(270deg);
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.logo {
+  top: 0.8rem;
+}
+
+.left-37 {
+  left: 37%;
+}
+
+.btn-footer:first-child {
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+}
+
+.btn-footer:last-child {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+}
+
+.margin-right-8rem {
+  margin-right: 8rem;
+}
+
+/***Spinner***/
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root {
+  --darkBlue: #3f51b5;
+}
+@-webkit-keyframes glow-loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes glow-loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Popup container */
+.pointer {
+    cursor: pointer;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popupimg {
+    visibility: hidden;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: -57%;
+    left: 180%;
+    height: 12rem;
+    width: 12rem;
+    max-width: 12rem;
+}
+
+/* Toggle class */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.hide {
+    -webkit-animation: fadeOut 3s;
+    animation: fadeOut 3s;
+    transform: scale(0);
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeOut {
+    from {opacity: 1; transform: scale(1);} 
+    to {opacity: 0; transform: scale(0);}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1; transform: scale(1);} 
+    to {opacity: 0; transform: scale(0);}
+}
+
+.bottom-half-rem {
+    bottom: 0.5rem;
+}
