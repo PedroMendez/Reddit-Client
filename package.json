@@ -8,7 +8,7 @@
     "tailwindcss": "^0.5.3"
   },
   "dependencies": {
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.3",
     "react-loadable": "^5.4.0",
